@@ -3,7 +3,7 @@ $(document).ready(function(){
 var $slider = $('.gallery'); 
 var $slide = 'li'; 
 var $transition_time = 1000; 
-var $time_between_slides = 9000; 
+var $time_between_slides = 9000;   // Time between slide change
 
 function slides(){
   return $slider.find($slide);

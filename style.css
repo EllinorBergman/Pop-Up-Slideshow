@@ -1,13 +1,11 @@
 .gallery {
-  margin: 10px 0;
-  width: 600px; 
-  height: 467px; 
+  height: 467px; /* Height of slideshow */
   position: relative;
   overflow: hidden;
 }
 
 .image {
-  width: 600px;
+  width: 600px; /* Width of slideshow */
 }
 
 .gallery li {
@@ -20,48 +18,60 @@
 .gallery li{display:none; list-style:none;}
 .gallery li:first-child {display:block;}
 
-.prev, .next {padding: 3px; font-size:25px; font-weight: 100; cursor:pointer;
-}
+.prev, .next {
+ padding: 3px;
+ font-size:25px;
+ font-weight: 100;
+ cursor:pointer;
+ } 
+ 
+/* Arrow Container */
 .slideButtons {
  width: 200px;
  position: relative;
 }
 
+/* Previous Arrow */
 .prev {
 float: left;
-background: #eee;
-color: #bdbcbc;
-padding: 5px 15px 1px 15px;
-font-family: Al Nile;
+background: #eee;  /* Background colour */
+color: #bdbcbc;  /* Arrow colour */
+padding: 5px 15px 1px 15px;  /* Size */
+font-family: Al Nile;   /* Arrow Font */
 }
 
+/* Previous Arrow Hover */
 .prev:hover {
-background: #e2e1e1;
-color: #fff;
+background: #e2e1e1;  
+color: #fff;  
 }
 
+/* Next Arrow */
 .next {
 float: left;
-background: #bdbcbc;
-color: #eee;
-border-left: 1px solid #fff;
-padding: 5px 15px 1px 15px;
-font-family: Al Nile;
+background: #bdbcbc;  /* Background colour */
+color: #eee;   /* Arrow colour */
+border-left: 1px solid #fff;   /* Border between arrows*/
+padding: 5px 15px 1px 15px;  /* Size */
+font-family: Al Nile;  /* Arrow Font */
 }
 
+
+/* Arrow Hover */
 .next:hover {
 background: #dad9d9;
 color: #bdbcbc;
 }
 
 
+/* Picture comment */
 span.comment {
  position: absolute;
  width: 93.3%;
- text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.43);
- background: rgba(0, 0, 0, 0.2);
- color: #eee;
- font-size: 11px;
+ text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.43);  /* Text Shadow */
+ background: rgba(0, 0, 0, 0.2);   /* Backround colour and opacity */
+ color: #eee;  /* Font colour */
+ font-size: 11px;   /* Font size */
  line-height: 1.5em;
  padding: 12px 20px;
  top: 0;
@@ -93,7 +103,7 @@ span.fullsize a {
   left:0;
   height:100%;
   width:100%;
-  background:white url(../img/loader2.gif) no-repeat scroll center center;
+  background:white url(img/loader2.gif) no-repeat scroll center center;
 }
 
 #lightbox {
